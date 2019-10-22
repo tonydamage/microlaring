@@ -1,0 +1,24 @@
+{
+  "microlarpingApp": {
+    "game": {
+      "home": {
+        "title": "Games",
+        "createLabel": "Vytvořit Game",
+        "createOrEditLabel": "Vytvořit nebo upravit Game",
+        "notFound": "No Games found"
+      },
+      "created": "Byl vytvořen potomek entity Game s identifikátorem {{ param }}",
+      "updated": "Potomek entity Game s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Game s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Game {{ id }}?"
+      },
+      "detail": {
+        "title": "Game"
+      },
+      "instance": "Instance",
+      "organizer": "Organizer",
+      "ruleset": "Ruleset"
+    }
+  }
+}

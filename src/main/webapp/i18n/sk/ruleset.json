@@ -1,0 +1,23 @@
+{
+  "microlarpingApp": {
+    "ruleset": {
+      "home": {
+        "title": "Rulesets",
+        "createLabel": "Pridať Ruleset",
+        "createOrEditLabel": "Pridať alebo upraviť Ruleset",
+        "notFound": "No Rulesets found"
+      },
+      "created": "Bol vytvorený potomok entity Ruleset s identifikátorom {{ param }}",
+      "updated": "Potomok entity Ruleset s identifikátorom {{ param }} bol upravený.",
+      "deleted": "Potomok entity Ruleset s identifikátorom {{ param }} bol vymazaný.",
+      "delete": {
+        "question": "Ste si istý, že chcete vymazať Ruleset {{ id }}?"
+      },
+      "detail": {
+        "title": "Ruleset"
+      },
+      "game": "Game",
+      "organizer": "Organizer"
+    }
+  }
+}

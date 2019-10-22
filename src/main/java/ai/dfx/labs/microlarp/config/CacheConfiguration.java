@@ -44,6 +44,19 @@ public class CacheConfiguration {
             createCache(cm, ai.dfx.labs.microlarp.domain.User.class.getName() + ".authorities");
             createCache(cm, ai.dfx.labs.microlarp.domain.PersistentToken.class.getName());
             createCache(cm, ai.dfx.labs.microlarp.domain.User.class.getName() + ".persistentTokens");
+            createCache(cm, ai.dfx.labs.microlarp.domain.Game.class.getName());
+            createCache(cm, ai.dfx.labs.microlarp.domain.Game.class.getName() + ".instances");
+            createCache(cm, ai.dfx.labs.microlarp.domain.Game.class.getName() + ".organizers");
+            createCache(cm, ai.dfx.labs.microlarp.domain.Game.class.getName() + ".rulesets");
+            createCache(cm, ai.dfx.labs.microlarp.domain.Instance.class.getName());
+            createCache(cm, ai.dfx.labs.microlarp.domain.Instance.class.getName() + ".organizers");
+            createCache(cm, ai.dfx.labs.microlarp.domain.Ruleset.class.getName());
+            createCache(cm, ai.dfx.labs.microlarp.domain.Ruleset.class.getName() + ".games");
+            createCache(cm, ai.dfx.labs.microlarp.domain.Ruleset.class.getName() + ".organizers");
+            createCache(cm, ai.dfx.labs.microlarp.domain.Organizer.class.getName());
+            createCache(cm, ai.dfx.labs.microlarp.domain.Organizer.class.getName() + ".games");
+            createCache(cm, ai.dfx.labs.microlarp.domain.Organizer.class.getName() + ".instances");
+            createCache(cm, ai.dfx.labs.microlarp.domain.Organizer.class.getName() + ".rulesets");
             // jhipster-needle-ehcache-add-entry
         };
     }

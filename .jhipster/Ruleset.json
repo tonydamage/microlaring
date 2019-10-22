@@ -1,0 +1,32 @@
+{
+    "name": "Ruleset",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "game",
+            "otherEntityRelationshipName": "ruleset",
+            "relationshipName": "game",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "organizer",
+            "otherEntityRelationshipName": "ruleset",
+            "relationshipName": "organizer",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20191022124858",
+    "entityTableName": "ruleset",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Organizer.
+    -->
+    <changeSet id="20191022124859-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="organizer_id"
+                                 baseTableName="organizer_game"
+                                 constraintName="fk_organizer_game_organizer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="organizer"/>
+
+        <addForeignKeyConstraint baseColumnNames="game_id"
+                                 baseTableName="organizer_game"
+                                 constraintName="fk_organizer_game_game_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="game"/>
+        
+        <addForeignKeyConstraint baseColumnNames="organizer_id"
+                                 baseTableName="organizer_instance"
+                                 constraintName="fk_organizer_instance_organizer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="organizer"/>
+
+        <addForeignKeyConstraint baseColumnNames="instance_id"
+                                 baseTableName="organizer_instance"
+                                 constraintName="fk_organizer_instance_instance_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="instance"/>
+        
+        <addForeignKeyConstraint baseColumnNames="organizer_id"
+                                 baseTableName="organizer_ruleset"
+                                 constraintName="fk_organizer_ruleset_organizer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="organizer"/>
+
+        <addForeignKeyConstraint baseColumnNames="ruleset_id"
+                                 baseTableName="organizer_ruleset"
+                                 constraintName="fk_organizer_ruleset_ruleset_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruleset"/>
+        
+    </changeSet>
+</databaseChangeLog>

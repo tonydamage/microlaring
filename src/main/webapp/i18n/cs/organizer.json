@@ -1,0 +1,24 @@
+{
+  "microlarpingApp": {
+    "organizer": {
+      "home": {
+        "title": "Organizers",
+        "createLabel": "Vytvořit Organizer",
+        "createOrEditLabel": "Vytvořit nebo upravit Organizer",
+        "notFound": "No Organizers found"
+      },
+      "created": "Byl vytvořen potomek entity Organizer s identifikátorem {{ param }}",
+      "updated": "Potomek entity Organizer s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Organizer s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Organizer {{ id }}?"
+      },
+      "detail": {
+        "title": "Organizer"
+      },
+      "game": "Game",
+      "instance": "Instance",
+      "ruleset": "Ruleset"
+    }
+  }
+}
