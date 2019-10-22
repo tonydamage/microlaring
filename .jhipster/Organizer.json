@@ -1,0 +1,40 @@
+{
+    "name": "Organizer",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "game",
+            "otherEntityRelationshipName": "organizer",
+            "relationshipName": "game",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "instance",
+            "otherEntityRelationshipName": "organizer",
+            "relationshipName": "instance",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "ruleset",
+            "otherEntityRelationshipName": "organizer",
+            "relationshipName": "ruleset",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20191022124859",
+    "entityTableName": "organizer",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,23 @@
+{
+  "microlarpingApp": {
+    "instance": {
+      "home": {
+        "title": "Instances",
+        "createLabel": "Pridať Instance",
+        "createOrEditLabel": "Pridať alebo upraviť Instance",
+        "notFound": "No Instances found"
+      },
+      "created": "Bol vytvorený potomok entity Instance s identifikátorom {{ param }}",
+      "updated": "Potomok entity Instance s identifikátorom {{ param }} bol upravený.",
+      "deleted": "Potomok entity Instance s identifikátorom {{ param }} bol vymazaný.",
+      "delete": {
+        "question": "Ste si istý, že chcete vymazať Instance {{ id }}?"
+      },
+      "detail": {
+        "title": "Instance"
+      },
+      "game": "Game",
+      "organizer": "Organizer"
+    }
+  }
+}

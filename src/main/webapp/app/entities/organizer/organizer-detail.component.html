@@ -1,0 +1,41 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="organizer">
+            <h2><span jhiTranslate="microlarpingApp.organizer.detail.title">Organizer</span> {{organizer.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="microlarpingApp.organizer.game">Game</span></dt>
+                <dd>
+                    <span *ngFor="let game of organizer.games; let last = last">
+                        <a [routerLink]="['/game', game?.id, 'view' ]">{{game.id}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+                <dt><span jhiTranslate="microlarpingApp.organizer.instance">Instance</span></dt>
+                <dd>
+                    <span *ngFor="let instance of organizer.instances; let last = last">
+                        <a [routerLink]="['/instance', instance?.id, 'view' ]">{{instance.id}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+                <dt><span jhiTranslate="microlarpingApp.organizer.ruleset">Ruleset</span></dt>
+                <dd>
+                    <span *ngFor="let ruleset of organizer.rulesets; let last = last">
+                        <a [routerLink]="['/ruleset', ruleset?.id, 'view' ]">{{ruleset.id}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/organizer', organizer.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
