@@ -1,0 +1,25 @@
+entity Game
+entity Account
+entity Instance
+entity Ruleset
+entity Organizer
+
+relationship OneToMany {
+	Account to Game
+    Account to Organizer
+    Game to Instance
+    Account to Ruleset
+}
+
+relationship ManyToMany {
+	// Game series organizers
+	Organizer to Game
+    // Instance of the game organizers
+    Organizer to Instance
+    // Ruleset authors
+    Organizer to Ruleset
+    // Rulsets applied to game
+	Ruleset to Game
+}
+
+
